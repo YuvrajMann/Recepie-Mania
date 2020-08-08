@@ -1,38 +1,161 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+.navbar-nav {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  background-color: #79a842;
+}
+.nav-item {
+  padding-left: 40px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.nav-item span:hover {
+  border-bottom: yellow dotted;
+}
+.brand-name {
+  padding-left: 5px;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.App .jumbotron {
+  background-color: #a2cf6ef3;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+.row h1 {
+  font-weight: bold;
+
+  padding-bottom: 15px;
+  color: white;
+  line-height: 55px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.spinner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2em;
+  min-height: 300px;
+  color: #79a842;
+  align-content: center;
+  align-items: center;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.329);
+  cursor: pointer;
+}
+.card-title {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: white;
+  font-size: 1.8em;
+}
+.card .card-img-overlay {
+  height: 30%;
+  background-color: rgba(172, 255, 47, 0.329);
+  transition: linear 0.3s;
+  bottom: 0px;
+  top: auto;
+  align-content: center;
+}
+.card-img-overlay:hover {
+  background-color: rgba(172, 255, 47, 0.473);
+  padding-top: 40%;
+}
+.card :hover {
+  color: black;
+  height: 100%;
+}
+.ingr {
+  box-shadow: 1px 2px 2px 2px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  width: 100px;
+}
+.Heading {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.ingredient span {
+  padding-left: 12px;
+}
+.ingredient {
+  padding-bottom: 10px;
+}
+.ingredient svg {
+  font-size: 10px;
+}
+.ingr:hover {
+  background-color: rgba(0, 0, 0, 0.041);
+}
+::selection {
+  background-color: rgba(0, 128, 0, 0.507);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main_card {
+  margin-bottom: 14px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiButtonBase-root {
+  border: 1px solid black;
+}
+#checker {
+  cursor: pointer;
+}
+.Heading {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 2px dotted rgba(0, 128, 0, 0.596); */
+  box-shadow: 0px 1px 0px 0px green;
+}
+.logo svg {
+  font-size: 30px;
+}
+.logo {
+  margin-top: -4px;
+  cursor: pointer;
+}
+.logo:hover {
+  color: rgba(0, 128, 0, 0.548);
+}
+input[type="checkbox"]:checked {
+  background-color: green;
+}
+.search-items {
+  display: flex;
+}
+.cries {
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: 600px;
+}
+.search-button {
+  font-size: 24px;
+  border-radius: 3px;
+  margin-left: -55.3px;
+  padding-left: 10px;
+  padding-right: 2px;
+  cursor: pointer;
+  margin-top: -7.8px;
+  padding-top: 1.8px;
+  transition: 0.2s ease-in-out;
+  color: black;
+}
+.search-button:hover {
+  color: rgba(0, 128, 0, 0.774);
+  /* background-color: rgba(0, 128, 0, 0.651); */
 }
