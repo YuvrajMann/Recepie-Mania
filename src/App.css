@@ -212,7 +212,7 @@ button.search-button:focus {
   text-align: center;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  font-size: 1.8em;
+  font-size: 2.3em;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -223,9 +223,11 @@ button.search-button:focus {
   text-align: center;
   color: black;
   font-size: 30px;
+  font-family: "Poppins", sans-serif;
 }
 .categories-type div #category_type:hover {
   border-bottom: 5px green dotted;
+  color: green;
 }
 .footer-section {
   margin-top: 20px;
