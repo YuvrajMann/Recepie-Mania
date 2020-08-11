@@ -69,6 +69,7 @@ nav {
   bottom: 0px;
   top: auto;
   align-content: center;
+  overflow: hidden;
 }
 .card-img-overlay:hover {
   background-color: rgba(172, 255, 47, 0.473);
@@ -82,7 +83,7 @@ nav {
   box-shadow: 1px 2px 2px 2px;
   border-radius: 5px;
   margin-bottom: 40px;
-  width: 100px;
+  width: ;
 }
 .Heading {
   font-weight: bold;
@@ -135,27 +136,97 @@ input[type="checkbox"]:checked {
 }
 .search-items {
   display: flex;
+  width: 60%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+button.search-button {
+  height: 44px;
+  width: 40px;
+  border: 3px solid rgb(41, 163, 41);
+  background-color: rgb(41, 163, 41);
+  margin-left: -16.5px;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  padding: 0px;
+  font-size: 20px;
+  color: white;
+}
+button.search-button:hover {
+  background-color: rgb(41, 163, 41);
+  border-color: rgb(41, 163, 41);
+}
+button.search-button:focus {
+  background-color: rgb(41, 163, 41);
+  border-color: rgb(41, 163, 41);
+}
+.search-button:focus {
+  border-color: rgb(41, 163, 41);
+}
+.search-items input {
+  padding: 5px;
+  outline: none;
+  border: 3px solid rgb(41, 163, 41);
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .cries {
   display: flex;
   justify-content: center;
 }
-form {
-  width: 600px;
+.search-items input:focus {
+  border-color: rgb(41, 163, 41);
 }
-.search-button {
-  font-size: 24px;
-  border-radius: 3px;
-  margin-left: -55.3px;
-  padding-left: 10px;
-  padding-right: 2px;
-  cursor: pointer;
-  margin-top: -7.8px;
-  padding-top: 1.8px;
-  transition: 0.2s ease-in-out;
+.footer-section {
+  background-color: #678f39;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  padding-top: 2px;
+  flex-direction: column;
+}
+.footer-section div:nth-child(1) {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer-section div:nth-child(2) {
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+}
+.footer-section div:nth-child(3) svg {
+  font-size: 15px;
+  margin-right: 5px;
+}
+.footer-section div:nth-child(3) {
+  letter-spacing: 2px;
+}
+.categories h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.categories h1 span {
+  border-bottom: 2px dotted yellowgreen;
+}
+.categories-type div {
+  text-align: center;
   color: black;
+  font-size: 30px;
 }
-.search-button:hover {
-  color: rgba(0, 128, 0, 0.774);
-  /* background-color: rgba(0, 128, 0, 0.651); */
+.categories-type div #category_type:hover {
+  border-bottom: 5px green dotted;
+}
+.footer-section {
+  margin-top: 20px;
 }

@@ -6,9 +6,10 @@ import { fetchDishes, fetchSearchedDishes } from "../redux/ActionCreators";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Home from "./HomeComponent";
 import { cusines_types } from "../Shared/cusines";
-import About from "./AboutComponent.js";
 import DishDetail from "./DishDetailComponent";
 import SearchComponent from "./SearchComponent";
+import Footer from "./FooterComponent.js";
+import Recepies from "./RecepiesComponent.js";
 
 const mapStateToProps = (state) => {
   return {
@@ -88,10 +89,18 @@ class Main extends Component {
               ></SearchComponent>
             )}
           />
-          <Route path="/about" component={() => <About />} />
           <Route path="/menu/:req_type/:dishLabel" component={DishWithId} />
+          <Route
+            path="/recepieTypes"
+            component={() => (
+              <Recepies
+                fetchSearchedDishes={this.props.fetchSearchedDishes}
+              ></Recepies>
+            )}
+          />
           <Redirect to="/home" />
         </Switch>
+        <Footer></Footer>
       </React.Fragment>
     );
   }

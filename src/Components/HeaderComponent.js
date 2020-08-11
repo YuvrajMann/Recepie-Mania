@@ -7,7 +7,7 @@ import {
   Jumbotron,
   NavbarToggler,
   Input,
-  Form,
+  Button,
 } from "reactstrap";
 import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
@@ -27,7 +27,7 @@ class Header extends Component {
     this.setState({ isNavOpen: !this.state.isNavOpen });
   }
   handelSearch() {
-    this.props.fetchSearchedDishes(this.recipeName.value, 70);
+    this.props.fetchSearchedDishes(this.recipeName.value, 100);
   }
   render() {
     return (
@@ -53,12 +53,7 @@ class Header extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/about" className="nav-link">
-                    <span>ABOUT</span>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/about" className="nav-link">
+                  <NavLink to="/recepieTypes" className="nav-link">
                     <span>Recipes</span>
                   </NavLink>
                 </NavItem>
@@ -78,24 +73,23 @@ class Header extends Component {
             </div>
             <div className="row row-header cries">
               <div className="search-items">
-                <Form>
-                  <Input
-                    type="text"
-                    placeholder="Search For Recipes"
-                    innerRef={(input) => {
-                      this.recipeName = input;
-                    }}
-                  ></Input>
-                </Form>
+                <Input
+                  type="text"
+                  placeholder="Search For Recipes"
+                  innerRef={(input) => {
+                    this.recipeName = input;
+                  }}
+                ></Input>
+
                 <Link to="/searchResult" className="nav-link">
-                  <div
+                  <Button
                     className="search-button"
                     onClick={() => {
                       this.handelSearch();
                     }}
                   >
                     <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
-                  </div>
+                  </Button>
                 </Link>
               </div>
             </div>
